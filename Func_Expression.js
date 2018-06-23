@@ -16,3 +16,11 @@ var sayBbye= function(){
 
 /// Calling Function Expression
 sayBbye();
+
+
+//// Calling one function from other function
+function callOther(fun){
+  console.log('Calling Bbye function from other function');
+  fun();
+}
+callOther(sayBbye);
