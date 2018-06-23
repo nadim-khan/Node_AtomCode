@@ -15,3 +15,6 @@ var timer=setInterval(function(){
   clearInterval(timer);
 }
   },2000);
+
+console.log('Current directory : '+__dirname);
+console.log('Current directory : '+__filename);
