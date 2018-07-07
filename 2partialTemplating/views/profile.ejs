@@ -1,0 +1,24 @@
+<html>
+    <head><h1>My First Node HTML Page !</h1><p>Node html collab</p></head>
+    <title>Node_html</title>
+    </title>
+    <style>
+        body{background:skyblue;font-family: verdana; color:#fff;padding:30px}
+        H1{font-size: 48px;text-transform: uppercase;text-align: center}
+        p,li{font-size: 20px;text-align: center}
+        ul{list-style-type: none;padding:0}
+
+    </style>
+    <body>
+        <% include partial/navigation.ejs %>
+        <H1> Welcome to the profile of : <%=person%> </H1>
+        <p><strong>Age : <%=data.age%>  </strong>  </p>
+        <p><strong>Job : <%=data.job%>  </strong>  </p>
+        <h2>Hobbies</h2>
+        <ul>
+            <% data.hobby.forEach(function(item){ %>
+                <li><%=item%></li>
+            <% }); %>
+        </ul>
+    </body>
+</html>
