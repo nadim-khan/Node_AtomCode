@@ -1,0 +1,18 @@
+<html>
+    <head><h1>My First Node HTML Page !</h1></head>
+    <title>Node_html</title>
+    </title>
+    <link href="/assets/style.css" rel="stylesheet" type="text/css">
+    <body>
+        <% include partial/navigation.ejs %>
+        <H2> Welcome to the profile of : <%=person%> </H2>
+        <p><strong>Age : <%=data.age%>  </strong>  </p>
+        <p><strong>Job : <%=data.job%>  </strong>  </p>
+        <h2>Hobbies</h2>
+        <ul>
+            <% data.hobby.forEach(function(item){ %>
+                <li><%=item%></li>
+            <% }); %>
+        </ul>
+    </body>
+</html>

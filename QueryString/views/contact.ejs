@@ -1,0 +1,22 @@
+<html>
+    <head><h1>Contact Us !</h1></head>
+    <title>contact</title>
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/assets/style.css" rel="stylesheet" type="text/css">
+    <body class="container">
+        <% include partial/navigation.ejs %>
+        <!-- <H1> Contact <%= queryObj.name %> : 8839086585</H1>query string object
+        <p>Occupation : <%= queryObj.job %></p>
+        <p> Thank You :)    </p>-->
+        <form id="contact-form">
+            <label for="Name">Who do you want to contact?</label>
+            <input type="text" name="Name" value="<%= queryObj.Name %>">
+            <label for="job">JOb Description?</label>
+            <input type="text" name="job" value="<%= queryObj.job %>">
+            <label for="email">Your Email </label>
+            <input type="text" name="email" value="<%= queryObj.email %>">
+            <button class="button"><span>Submit </span></button>
+        </form>
+    </body>
+</html>
